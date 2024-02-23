@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+@media (max-width: 600px) {
+
+/* トップページ */
+
+ /* トップページのナビゲーションメニュー */
+ #top-page .main-nav {
+     flex-direction: column;
+     align-items: center; /* flex column の時の中央揃え */
+     font-size: 1.3rem;
+     margin-top: 25px;
+ }
+ #top-page .main-nav li {
+    margin: 8px 0;
+}
+	/* カミングスーン */
+.coming {
+	width: auto;
+    font-size: 3rem;
+    text-align: center;
+	padding: 0 10px;
+   /* border-bottom: 1vw solid rgba( 234, 97, 142, 0.4); */
+    position: absolute; /* 位置固定 */
+	top: 50%;
+    left: 10%;
+   /* transform: translate(-50%, 0); */
+    transform: rotate(-11deg); /* ななめ */
+    
+  /* background-color: rgba( 255, 255, 0, 0.4); */
+   background:linear-gradient(transparent 10%, rgba( 255, 255, 0, 0.4) 10%); /* マーカー #fff462 */
+    border-radius: .4px; /* 角丸 */ 
+}
+
+
+/* COMMON */
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+/* MOROCCO */
+
+/* MOROCCO-TOPの中のトップのメニュー画像 */
+#m-top .grid {
+    grid-template-columns: repeat( 2, 150px);
+    grid-template-rows: repeat( 2, 160px);
+    margin:10px;
+    /* border: red 1px double; /* 確認用 */
+}
+.item {
+    margin: 15px;
+    /* border: blueviolet 1px double; /* 確認用 */
+} 
+}
+ /* ななめにする */
+span.tilt-1 {
+    transform: rotate(-5deg);
+}
+
+span.tilt-2 {
+    transform: rotate(4deg);
+}
+span.tilt-3 {
+    transform: rotate(5deg);
+}
+span.tilt-4 {
+    transform: rotate(-2deg);
+}
+/* ドロップシャドウ */
+#m-top img,
+#marrakech img {
+    box-shadow: 2px 2px 3px #9e9478;
+}
+/*
+#marrakech img {
+    filter: drop-shadow( 5px 5px 5px );
+} */
+
+
+}

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>JOURNEY</title>
+        <meta name="description" content="旅した国">
+        <link rel="icon" href="img/favicon.svg" type="image/svg+xml"><!--  ファビコン(svg)   -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"><!-- ビューポート  -->
+
+     <!-- CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css"><!-- リセットCSS  -->
+        <link rel="stylesheet" href="css/style.css" ><!-- PC用CSS -->
+        <link rel="stylesheet" href="css/mobile.css" media="(max-width: 600px)"><!-- スマホ用CSS  -->
+
+     <!-- Googleフォント-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Knewave&family=Yusei+Magic&display=swap" rel="stylesheet">
+     <!-- Googleフォント-->
+    </head>
+
+    <body id="top-page">
+
+        <div id="sky">
+            <div class="home-content">
+                        <h1><a href="https://herovilow.com/"><img class="logo" src="img/logo_white.png" alt="ロゴ"></a></h1>
+                <header>
+                 <h2 class="title">JOURNEY</h2>
+                 <p class="sub-title">The countries I have been to</p>
+                 <div class="coming"><p>coming soon</p></div>
+                 <nav>
+                     <ul class="main-nav">
+                         <li class="pink"><a href="#">MOROCCO</a></li>
+                         <li><a href="#">TIBET</a></li>
+                         <li class="green"><a href="#">INDIA</a></li>
+                         <li class="blue"><a href="#">NEPAL</a></li>
+                     </ul>
+                 </nav>
+                <!-- <div class="coming"><p>coming soon</p></div>  -->
+                </header>
+            <footer>
+            <div>
+               <p><small>&copy; HEROVILOW</small></p>
+            </div>
+            </footer>
+
+            </div><!-- /.home-content-->
+        </div><!-- #sky -->
+
+     <!--空のアニメーション-->
+     <script src = "https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"> </script>
+     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+     <script>
+     VANTA.CLOUDS({
+      el: "#sky",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      sunlightColor: 0xffda32,
+      speed: 0.60
+      })
+     </script><!--空のアニメーション　ここまで-->
+
+    </body>
+    
+</html>
